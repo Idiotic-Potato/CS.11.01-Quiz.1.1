@@ -1,20 +1,24 @@
 import java.util.Scanner;
 
-/**
-*****************************************************************************************************
-* By writing your name in the space provided below, you are honouring the CIS academic honesty pledge 
-* “I have neither given nor received unauthorized aid on this piece of work.”
-* NAME: 
-*****************************************************************************************************
-*/
-
 public class Main {
-
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Please enter your name:");
+        String firstName = scanner.nextLine();
 
+        System.out.println("Please enter your age:");
+        int age = scanner.nextInt();
 
+        scanner.nextLine();
 
+        System.out.println("Please enter your favourite food:");
+        String favouriteFood= scanner.nextLine();
+
+        System.out.println("First Name: " + firstName);
+        System.out.println("Age: " + age);
+        System.out.println("Favourite food: " + favouriteFood);
+
+        scanner.close();
     }
-
 }
